@@ -124,6 +124,7 @@
               <argLine>
                 --add-opens java.base/java.lang=ALL-UNNAMED
                 --add-opens java.base/java.util=ALL-UNNAMED
+                -Xlog:aot+map=trace,aot+map+oops=trace,aot=warning:file=aot.map:none:filesize=0
                 -XX:AOTCacheOutput=${project.basedir}/cache.aot
               </argLine>
             </configuration>
